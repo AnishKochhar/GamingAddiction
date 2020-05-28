@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D5247FCA670059A5AA /* AppDelegate.swift */; };
 		102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D7247FCA670059A5AA /* SceneDelegate.swift */; };
-		102F10DA247FCA670059A5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D9247FCA670059A5AA /* ViewController.swift */; };
+		102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D9247FCA670059A5AA /* IGDViewController.swift */; };
 		102F10DD247FCA670059A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DB247FCA670059A5AA /* Main.storyboard */; };
 		102F10DF247FCA6B0059A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DE247FCA6B0059A5AA /* Assets.xcassets */; };
 		102F10E2247FCA6B0059A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		102F10D2247FCA670059A5AA /* Gaming Addiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming Addiction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		102F10D5247FCA670059A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		102F10D7247FCA670059A5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		102F10D9247FCA670059A5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		102F10D9247FCA670059A5AA /* IGDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDViewController.swift; sourceTree = "<group>"; };
 		102F10DC247FCA670059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		102F10DE247FCA6B0059A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102F10E1247FCA6B0059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,31 @@
 		102F10D4247FCA670059A5AA /* Gaming Addiction */ = {
 			isa = PBXGroup;
 			children = (
+				102F10E3247FCA6B0059A5AA /* Info.plist */,
 				102F10D5247FCA670059A5AA /* AppDelegate.swift */,
 				102F10D7247FCA670059A5AA /* SceneDelegate.swift */,
-				102F10D9247FCA670059A5AA /* ViewController.swift */,
-				102F10DB247FCA670059A5AA /* Main.storyboard */,
 				102F10DE247FCA6B0059A5AA /* Assets.xcassets */,
-				102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */,
-				102F10E3247FCA6B0059A5AA /* Info.plist */,
+				102F10EC24801C540059A5AA /* Storyboards */,
+				102F10EB24801C430059A5AA /* Controllers */,
 			);
 			path = "Gaming Addiction";
+			sourceTree = "<group>";
+		};
+		102F10EB24801C430059A5AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				102F10D9247FCA670059A5AA /* IGDViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		102F10EC24801C540059A5AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */,
+				102F10DB247FCA670059A5AA /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				102F10DA247FCA670059A5AA /* ViewController.swift in Sources */,
+				102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */,
 				102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */,
 				102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.anish.Gaming-Addiction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.anish.Gaming-Addiction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
