@@ -13,7 +13,7 @@ class IGDViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var strongDisagree: UIButton!
     @IBOutlet weak var disagree: UIButton!
-    @IBOutlet weak var neitherAgreeNotDisagree: UIButton!
+    @IBOutlet weak var neitherAgreeNorDisagree: UIButton!
     @IBOutlet weak var agree: UIButton!
     @IBOutlet weak var strongAgree: UIButton!
     
@@ -86,6 +86,12 @@ class IGDViewController: UIViewController {
 
         // Need to check if we are at the end of the questions
         if questionNumber == 20 {
+            if IGDViewController.answers.contains(0) {
+                // At least one question has been left empty, and a user cannot continue until it has been filled in
+                let ac = UIAlertController(title: "Missing answers for at least one question ", message: "Please go back to question \(IGDViewController.answers.firstIndex(of: 0)! + 1) and enter your response.", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                present(ac, animated: true)
+            }
             // We are at end of questions, load the results page
             loadResultsPage()
             
@@ -158,7 +164,7 @@ class IGDViewController: UIViewController {
     func deselectAllButtons() {
         strongDisagree.isSelected = false
         disagree.isSelected = false
-        neitherAgreeNotDisagree.isSelected = false
+        neitherAgreeNorDisagree.isSelected = false
         agree.isSelected = false
         strongAgree.isSelected = false
         currentAnswer = 0
@@ -175,7 +181,7 @@ class IGDViewController: UIViewController {
             disagree.isSelected = true
         case 3:
             // select "Neither agree nor disagree"
-            neitherAgreeNotDisagree.isSelected = true
+            neitherAgreeNorDisagree.isSelected = true
         case 4:
             // select "Agree"
             agree.isSelected = true
@@ -194,7 +200,8 @@ class IGDViewController: UIViewController {
         // Instantiate the Results View Controller
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Results") as? ResultsViewController {
             vc.answers = IGDViewController.answers
-            present(vc, animated: true)
+            // Push the vc onto the navigation stack via a show segue
+            show(vc, sender: self)
         }
     }
 
