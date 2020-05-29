@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -179,35 +187,35 @@
             <objects>
                 <viewController id="bD8-OX-JJP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29v-7a-5ws">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e84-cO-be3">
-                                <rect key="frame" x="0.0" y="88" width="375" height="1078"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1178"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gon-Uv-SSp" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1078"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1076.3333333333333"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-tN-Cid">
-                                                <rect key="frame" x="33.666666666666657" y="56" width="308" height="471"/>
+                                                <rect key="frame" x="33.666666666666657" y="60" width="308" height="471"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="471" id="5zq-8k-gtd"/>
                                                     <constraint firstAttribute="width" constant="308" id="fQs-GK-Fmm"/>
                                                 </constraints>
-                                                <mutableString key="text">The video game indsutry is currently bigger than the films and music industries combined. There are literal billions being spent with the aim of making games more addictive, and keeping users playing for as long as possible.
+                                                <string key="text">The video game indsutry is currently bigger than the films and music industries combined. There are literal billions being spent with the aim of making games more addictive, and keeping users playing for as long as possible.
 
 It's estimated that anywhere between 1 and 16% of gamers have an addiction, the negatives of which can include  dependance-based behaviour, poorer cognitive functioning, and general emotional difficulties such as anxiety and depression to name a few.
 
 Given the huge amount of free time that people have received due to nationwide lockdowns, a large number of people will be turning to video games as a way to spend time. 
 
-There is going to be a large increase in the number of cases of video game addiction, and so, being aware of when it may be present, as well as how to prevent it in the first place, can help a person back to a better mental state and a more productive and fun lifestyle.</mutableString>
+There is going to be a large increase in the number of cases of video game addiction, and so, being aware of when it may be present, as well as how to prevent it in the first place, can help a person back to a better mental state and a more productive and fun lifestyle.</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7e-Sz-fnY">
-                                                <rect key="frame" x="20" y="997" width="335" height="36"/>
+                                                <rect key="frame" x="20" y="1010.3333333333333" width="335" height="36"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Continue">
@@ -224,38 +232,76 @@ There is going to be a large increase in the number of cases of video game addic
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBz-o3-VIm">
-                                                <rect key="frame" x="17" y="702" width="341" height="185"/>
+                                                <rect key="frame" x="17" y="772" width="341" height="131.33333333333337"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="341" id="MId-bX-Yh3"/>
-                                                    <constraint firstAttribute="height" constant="185" id="NUP-Ga-LI3"/>
                                                 </constraints>
                                                 <string key="text">The app begins with the Internet Gaming Disorder Test (IGD-20 test), a 20 question, multiple choice form, in order to give you a breakdown of your current status. Answer the questions as truthly as you can, and read the results carefully, as they will not be stored anywhere.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIo-da-DrS">
-                                                <rect key="frame" x="19.666666666666657" y="542" width="336" height="115"/>
+                                                <rect key="frame" x="19.666666666666657" y="594" width="336" height="115"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="336" id="FE7-fS-Hfm"/>
                                                     <constraint firstAttribute="height" constant="115" id="GXY-O6-Mhk"/>
                                                 </constraints>
                                                 <string key="text">This app is designed to help those who would like to self-regulate their video game usage, and includes features that will help you monitor how much time you actually spend gaming.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://www.halleypontes.com/igd-20/" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tE5-rl-QdW">
+                                                <rect key="frame" x="50" y="923.33333333333337" width="275" height="32"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="275" id="ZwA-ne-gzQ"/>
+                                                    <constraint firstAttribute="height" constant="32" id="cRd-eE-7YD"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEd-cK-2sf">
+                                                <rect key="frame" x="20" y="23" width="105" height="23"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The aim of this app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-IT-OyP">
+                                                <rect key="frame" x="20" y="556" width="165" height="23"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The IGD-20 test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGi-hi-JWC">
+                                                <rect key="frame" x="17" y="734" width="138" height="23"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="uIo-da-DrS" firstAttribute="top" secondItem="dxG-tN-Cid" secondAttribute="bottom" constant="15" id="2Pb-iY-Pne"/>
-                                            <constraint firstItem="DBz-o3-VIm" firstAttribute="top" secondItem="uIo-da-DrS" secondAttribute="bottom" constant="45" id="59C-rY-JDN"/>
                                             <constraint firstItem="dxG-tN-Cid" firstAttribute="centerX" secondItem="gon-Uv-SSp" secondAttribute="centerX" id="8a5-g4-LxB"/>
-                                            <constraint firstItem="dxG-tN-Cid" firstAttribute="top" secondItem="gon-Uv-SSp" secondAttribute="top" constant="56" id="MyQ-EA-wFG"/>
-                                            <constraint firstItem="O7e-Sz-fnY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DBz-o3-VIm" secondAttribute="bottom" constant="20" id="Rno-b2-9Q8"/>
+                                            <constraint firstItem="YGi-hi-JWC" firstAttribute="top" secondItem="uIo-da-DrS" secondAttribute="bottom" constant="25" id="9ks-Pg-u96"/>
+                                            <constraint firstItem="tE5-rl-QdW" firstAttribute="centerX" secondItem="gon-Uv-SSp" secondAttribute="centerX" id="APK-5j-uNo"/>
+                                            <constraint firstItem="uIo-da-DrS" firstAttribute="top" secondItem="7oq-IT-OyP" secondAttribute="bottom" constant="15" id="Hap-Yf-bQb"/>
+                                            <constraint firstItem="DBz-o3-VIm" firstAttribute="top" secondItem="YGi-hi-JWC" secondAttribute="bottom" constant="15" id="IWg-BG-9x3"/>
+                                            <constraint firstItem="YGi-hi-JWC" firstAttribute="leading" secondItem="gon-Uv-SSp" secondAttribute="leading" constant="17" id="KUN-pE-gu9"/>
+                                            <constraint firstAttribute="trailing" secondItem="tE5-rl-QdW" secondAttribute="trailing" constant="50" id="Kr7-xg-9zb"/>
+                                            <constraint firstItem="dxG-tN-Cid" firstAttribute="top" secondItem="gon-Uv-SSp" secondAttribute="top" constant="60" id="MyQ-EA-wFG"/>
+                                            <constraint firstItem="zEd-cK-2sf" firstAttribute="top" secondItem="gon-Uv-SSp" secondAttribute="top" constant="23" id="OwH-wB-DKe"/>
+                                            <constraint firstItem="tE5-rl-QdW" firstAttribute="top" secondItem="DBz-o3-VIm" secondAttribute="bottom" constant="20" id="Qt2-Cf-OxA"/>
+                                            <constraint firstItem="zEd-cK-2sf" firstAttribute="leading" secondItem="gon-Uv-SSp" secondAttribute="leading" constant="20" id="SEM-cU-tgc"/>
+                                            <constraint firstItem="7oq-IT-OyP" firstAttribute="top" secondItem="dxG-tN-Cid" secondAttribute="bottom" constant="25" id="XJn-IP-esK"/>
                                             <constraint firstItem="O7e-Sz-fnY" firstAttribute="centerX" secondItem="gon-Uv-SSp" secondAttribute="centerX" id="ZTR-5w-t3n"/>
+                                            <constraint firstItem="7oq-IT-OyP" firstAttribute="leading" secondItem="gon-Uv-SSp" secondAttribute="leading" constant="20" id="c73-Bi-JqJ"/>
                                             <constraint firstItem="uIo-da-DrS" firstAttribute="centerX" secondItem="gon-Uv-SSp" secondAttribute="centerX" id="dGL-N4-qYy"/>
-                                            <constraint firstAttribute="bottom" secondItem="O7e-Sz-fnY" secondAttribute="bottom" constant="45" id="t7f-5X-0wJ"/>
+                                            <constraint firstItem="O7e-Sz-fnY" firstAttribute="firstBaseline" secondItem="tE5-rl-QdW" secondAttribute="baseline" constant="80" id="lFR-o9-BTv"/>
+                                            <constraint firstAttribute="bottom" secondItem="O7e-Sz-fnY" secondAttribute="bottom" constant="30" id="t7f-5X-0wJ"/>
                                             <constraint firstAttribute="trailing" secondItem="O7e-Sz-fnY" secondAttribute="trailing" constant="20" id="unh-6e-2VV"/>
                                             <constraint firstItem="DBz-o3-VIm" firstAttribute="centerX" secondItem="gon-Uv-SSp" secondAttribute="centerX" id="y99-5w-SkJ"/>
                                         </constraints>
@@ -284,7 +330,7 @@ There is going to be a large increase in the number of cases of video game addic
                         <viewLayoutGuide key="safeArea" id="DMq-td-A28"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="Tob-h9-lU9"/>
-                    <size key="freeformSize" width="375" height="1200"/>
+                    <size key="freeformSize" width="375" height="1300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDt-cy-MPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

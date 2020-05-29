@@ -13,6 +13,12 @@
 		102F10DD247FCA670059A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DB247FCA670059A5AA /* Main.storyboard */; };
 		102F10DF247FCA6B0059A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DE247FCA6B0059A5AA /* Assets.xcassets */; };
 		102F10E2247FCA6B0059A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */; };
+		105A24E524810B3000F47407 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24D824810B3000F47407 /* Roboto-Medium.ttf */; };
+		105A24E924810B3000F47407 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24DC24810B3000F47407 /* Roboto-ThinItalic.ttf */; };
+		105A24EA24810B3000F47407 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24DD24810B3000F47407 /* Roboto-BoldItalic.ttf */; };
+		105A24ED24810B3000F47407 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A24E024810B3000F47407 /* LICENSE.txt */; };
+		105A24F024810B3000F47407 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24E324810B3000F47407 /* Roboto-Thin.ttf */; };
+		105A24F124810B3000F47407 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24E424810B3000F47407 /* Roboto-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		102F10DE247FCA6B0059A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102F10E1247FCA6B0059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		102F10E3247FCA6B0059A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105A24D824810B3000F47407 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		105A24DC24810B3000F47407 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		105A24DD24810B3000F47407 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		105A24E024810B3000F47407 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		105A24E324810B3000F47407 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		105A24E424810B3000F47407 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		102F10D4247FCA670059A5AA /* Gaming Addiction */ = {
 			isa = PBXGroup;
 			children = (
+				105A24D724810B3000F47407 /* Roboto */,
 				102F10E3247FCA6B0059A5AA /* Info.plist */,
 				102F10D5247FCA670059A5AA /* AppDelegate.swift */,
 				102F10D7247FCA670059A5AA /* SceneDelegate.swift */,
@@ -82,6 +95,19 @@
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
+		};
+		105A24D724810B3000F47407 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				105A24E024810B3000F47407 /* LICENSE.txt */,
+				105A24E324810B3000F47407 /* Roboto-Thin.ttf */,
+				105A24D824810B3000F47407 /* Roboto-Medium.ttf */,
+				105A24E424810B3000F47407 /* Roboto-Black.ttf */,
+				105A24DC24810B3000F47407 /* Roboto-ThinItalic.ttf */,
+				105A24DD24810B3000F47407 /* Roboto-BoldItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -141,7 +167,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105A24ED24810B3000F47407 /* LICENSE.txt in Resources */,
+				105A24EA24810B3000F47407 /* Roboto-BoldItalic.ttf in Resources */,
+				105A24E524810B3000F47407 /* Roboto-Medium.ttf in Resources */,
 				102F10E2247FCA6B0059A5AA /* LaunchScreen.storyboard in Resources */,
+				105A24F024810B3000F47407 /* Roboto-Thin.ttf in Resources */,
+				105A24E924810B3000F47407 /* Roboto-ThinItalic.ttf in Resources */,
+				105A24F124810B3000F47407 /* Roboto-Black.ttf in Resources */,
 				102F10DF247FCA6B0059A5AA /* Assets.xcassets in Resources */,
 				102F10DD247FCA670059A5AA /* Main.storyboard in Resources */,
 			);
