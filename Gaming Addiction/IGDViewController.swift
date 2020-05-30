@@ -109,9 +109,10 @@ class IGDViewController: UIViewController {
     
     // MARK: Radio Buttons
     @IBAction func strongDisagree(_ sender: UIButton) {
-        // Simply flips the state of the button, changing the image presented
+        // Simply flips the state of the button, changing the image presented and reset current answer
         if sender.isSelected {
             sender.isSelected = false
+            currentAnswer = 0
         } else {
             // When I select this button, all others should deslect first (because all options are mutually exclusive)
             deselectAllButtons()
@@ -123,6 +124,7 @@ class IGDViewController: UIViewController {
     @IBAction func disagree(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            currentAnswer = 0
         } else {
             deselectAllButtons()
             sender.isSelected = true
@@ -133,6 +135,7 @@ class IGDViewController: UIViewController {
     @IBAction func neitherAgreeNorDisagree(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            currentAnswer = 0
         } else {
             deselectAllButtons()
             sender.isSelected = true
@@ -143,6 +146,7 @@ class IGDViewController: UIViewController {
     @IBAction func agree(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            currentAnswer = 0
         } else {
             deselectAllButtons()
             sender.isSelected = true
@@ -153,6 +157,7 @@ class IGDViewController: UIViewController {
     @IBAction func strongAgree(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            currentAnswer = 0
         } else {
             deselectAllButtons()
             sender.isSelected = true
