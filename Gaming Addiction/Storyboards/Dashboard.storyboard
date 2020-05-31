@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-BoldItalic.ttf">
+            <string>Roboto-BoldItalic</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="3I5-MZ-T74">
+            <objects>
+                <viewController id="2yV-G6-sPz" customClass="DashboardViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jE-RB-7tj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hau-qN-207">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Dashboard" id="haH-k9-tUf">
+                                        <barButtonItem key="rightBarButtonItem" title="Add session" id="wW7-Vv-OG4"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="SnK-IR-g40"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="aSZ-70-1KL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Q8-YG-bcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="121"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Mx-Ze-P5K">
+            <objects>
+                <tabBarController id="RW4-mi-Q6H" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9b0-aS-Dxr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2yV-G6-sPz" kind="relationship" relationship="viewControllers" id="fXt-bu-zhq"/>
+                        <segue destination="Wwx-lJ-luH" kind="relationship" relationship="viewControllers" id="pZ3-nk-lfr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3O-wc-Cct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-609"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="Vrz-Na-6Zk">
+            <objects>
+                <viewController storyboardIdentifier="Results" id="Wwx-lJ-luH" customClass="ResultsViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gmy-DL-Ro9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Rw-78-bEb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1773"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daK-YJ-8zF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1841.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="The Griffiths' Model of Addiction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e52-pd-xxE">
+                                                <rect key="frame" x="19" y="82" width="289.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uf5-oZ-INb">
+                                                <rect key="frame" x="23" y="116" width="329" height="247"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="329" id="IMj-n4-NbR"/>
+                                                    <constraint firstAttribute="height" constant="247" id="aSp-XI-IpA"/>
+                                                </constraints>
+                                                <string key="text">According to Dr Mark Griffiths all addictions are composed of the same 6 components. These are: Salience, Mood Modification, Tolerance, Withdrawal Symptoms, Conflict and Relapse.
+
+Each of the questions in the IGD-20 test you just completed fits into one of these categories. Therefore, you will receive a breakdown of how susceptible you are to each of these components.
+
+There is also a graph below that shows how different categories of gamers scored on the test in a recent study. Please compare you results to theirs' and see what category you fit in.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Salience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYy-cN-HJa">
+                                                <rect key="frame" x="19" y="388" width="76" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XK9-JH-yWC">
+                                                <rect key="frame" x="23" y="422" width="329" height="139"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="139" id="dvD-ra-Itx"/>
+                                                    <constraint firstAttribute="width" constant="329" id="txt-2R-LSg"/>
+                                                </constraints>
+                                                <string key="text">This occurs when online gaming becomes the most important activity in the person’s life and dominates thinking (pre-occupations and cognitive distortions), feelings (cravings), and behavior (deterioration of socialized behavior). For instance, even if the person is not actually gaming online, he/she will be thinking about it and planning for the next session.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWr-vi-k36">
+                                                <rect key="frame" x="307" y="390" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Mood Modification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apC-gV-nj5">
+                                                <rect key="frame" x="19" y="591" width="168.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-FS-mVO">
+                                                <rect key="frame" x="307" y="593" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmu-2m-x4u">
+                                                <rect key="frame" x="23" y="625" width="329" height="118"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="329" id="6M1-aa-aQA"/>
+                                                    <constraint firstAttribute="height" constant="118" id="PRd-bc-BTk"/>
+                                                </constraints>
+                                                <string key="text">These are the subjective experiences that people report as a consequence of engaging in online gaming and can be seen as a coping strategy (i.e., they experience an arousing ‘buzz’ or ‘high’ or paradoxically tranquilizing feel of ‘escape or ‘numbing’).</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" misplaced="YES" text="Tolerance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-qF-vh2">
+                                                <rect key="frame" x="19" y="773" width="96" height="23"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJG-t3-pJ4">
+                                                <rect key="frame" x="307" y="774.5" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F6-6Y-4LV">
+                                                <rect key="frame" x="23" y="806" width="329" height="108"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="108" id="fgS-pR-YbO"/>
+                                                    <constraint firstAttribute="width" constant="329" id="m3L-B0-JxO"/>
+                                                </constraints>
+                                                <string key="text">Increasing amounts of online gaming are required to achieve the former mood-modifying effects. For someone engaged in online gaming, these means a gradual build up of the amount of time spent online, engaged in the behavior.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Withdrawal Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMk-4o-WGe">
+                                                <rect key="frame" x="19" y="944" width="202.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-6U-hC1">
+                                                <rect key="frame" x="306" y="946" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lV-i3-9fh">
+                                                <rect key="frame" x="23" y="978" width="329" height="84"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="TCL-Oc-moB"/>
+                                                    <constraint firstAttribute="width" constant="329" id="knM-6M-Xar"/>
+                                                </constraints>
+                                                <string key="text">Unpleasant feeling states and/or physical effects that occur when online gaming is discontinued or suddenly reduced (e.g. the shakes, moodiness, irritability, etc.).</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conflict" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmv-h9-L80">
+                                                <rect key="frame" x="19" y="1092" width="69" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xp-IS-tG8">
+                                                <rect key="frame" x="306" y="1094" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-31-WRR">
+                                                <rect key="frame" x="23" y="1125.5" width="329" height="134"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="329" id="DEO-E3-3r6"/>
+                                                    <constraint firstAttribute="height" constant="134" id="yKf-uC-Gaw"/>
+                                                </constraints>
+                                                <string key="text">Conflicts between the online gamer and those around him (interpersonal conflict), conflicts with other activities (job, schoolwork, social life, hobbies, and interests) or from within the individual him- or herself (intrapsychic conflict and/or subjective feelings of loss of control), which are concerned with spending too much time in online gaming).</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Relapse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-im-d3A">
+                                                <rect key="frame" x="19" y="1289.5" width="72.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-Ui-dLe">
+                                                <rect key="frame" x="306" y="1291.5" width="45" height="20"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mH-XT-InF">
+                                                <rect key="frame" x="23" y="1323.5" width="329" height="86"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="329" id="7en-Qu-LEL"/>
+                                                    <constraint firstAttribute="height" constant="86" id="S0h-FA-zUU"/>
+                                                </constraints>
+                                                <string key="text">Repeated reversions to earlier patterns of online gaming. Patterns typical of the height of excessive online gaming are quickly restored after periods of abstinence or control.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gat-Uo-KJv">
+                                                <rect key="frame" x="154.5" y="30" width="66.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-hx-cUL">
+                                                <rect key="frame" x="115" y="1449.5" width="145.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IGD Test Classes" translatesAutoresizingMaskIntoConstraints="NO" id="zZU-9K-qie">
+                                                <rect key="frame" x="6" y="1513.5" width="363" height="268"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="363" id="hLt-4D-KQm"/>
+                                                    <constraint firstAttribute="height" constant="268" id="t53-vc-vv1"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="CWr-vi-k36" firstAttribute="centerY" secondItem="SYy-cN-HJa" secondAttribute="centerY" id="42C-VX-Zba"/>
+                                            <constraint firstItem="6F6-6Y-4LV" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="6R2-dQ-zg3"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ddb-hx-cUL" secondAttribute="trailing" constant="30" id="6mq-Vo-k0C"/>
+                                            <constraint firstItem="Nmv-h9-L80" firstAttribute="top" secondItem="2lV-i3-9fh" secondAttribute="bottom" constant="30" id="7Jy-i3-Urb"/>
+                                            <constraint firstItem="DVJ-31-WRR" firstAttribute="top" secondItem="Nmv-h9-L80" secondAttribute="bottom" constant="10" id="7sK-TP-LsI"/>
+                                            <constraint firstItem="Nmv-h9-L80" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="8DO-z6-xQV"/>
+                                            <constraint firstItem="apC-gV-nj5" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="9lP-Bs-905"/>
+                                            <constraint firstItem="uxS-qF-vh2" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="AVB-JA-XXz"/>
+                                            <constraint firstItem="1xl-im-d3A" firstAttribute="top" secondItem="DVJ-31-WRR" secondAttribute="bottom" constant="30" id="BI0-C5-BY3"/>
+                                            <constraint firstItem="zZU-9K-qie" firstAttribute="top" secondItem="ddb-hx-cUL" secondAttribute="bottom" constant="40" id="D4X-br-O8K"/>
+                                            <constraint firstItem="7mH-XT-InF" firstAttribute="top" secondItem="1xl-im-d3A" secondAttribute="bottom" constant="10" id="DMf-Kh-YVE"/>
+                                            <constraint firstItem="tl9-6U-hC1" firstAttribute="centerY" secondItem="BMk-4o-WGe" secondAttribute="centerY" id="Dt6-lc-cek"/>
+                                            <constraint firstItem="tmu-2m-x4u" firstAttribute="top" secondItem="apC-gV-nj5" secondAttribute="bottom" constant="10" id="EYX-no-ZGE"/>
+                                            <constraint firstAttribute="trailing" secondItem="QJG-t3-pJ4" secondAttribute="trailing" constant="23" id="EZf-nA-fry"/>
+                                            <constraint firstItem="apC-gV-nj5" firstAttribute="top" secondItem="XK9-JH-yWC" secondAttribute="bottom" constant="30" id="HIG-9a-REa"/>
+                                            <constraint firstAttribute="bottom" secondItem="zZU-9K-qie" secondAttribute="bottom" constant="60" id="IVj-58-9oh"/>
+                                            <constraint firstItem="Gat-Uo-KJv" firstAttribute="top" secondItem="daK-YJ-8zF" secondAttribute="top" constant="30" id="IiD-Er-PJz"/>
+                                            <constraint firstItem="uxS-qF-vh2" firstAttribute="top" secondItem="tmu-2m-x4u" secondAttribute="bottom" constant="30" id="Lbc-b4-pqC"/>
+                                            <constraint firstItem="XK9-JH-yWC" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="Lml-4g-Tgl"/>
+                                            <constraint firstAttribute="trailing" secondItem="sBb-FS-mVO" secondAttribute="trailing" constant="23" id="MCH-gJ-Zx2"/>
+                                            <constraint firstItem="SYy-cN-HJa" firstAttribute="top" secondItem="uf5-oZ-INb" secondAttribute="bottom" constant="25" id="NHV-k8-Gt7"/>
+                                            <constraint firstItem="QJG-t3-pJ4" firstAttribute="centerY" secondItem="uxS-qF-vh2" secondAttribute="centerY" id="PIq-CM-Y7K"/>
+                                            <constraint firstItem="ddb-hx-cUL" firstAttribute="top" secondItem="7mH-XT-InF" secondAttribute="bottom" constant="40" id="Qb2-ia-ja4"/>
+                                            <constraint firstItem="6F6-6Y-4LV" firstAttribute="top" secondItem="uxS-qF-vh2" secondAttribute="bottom" constant="10" id="VcB-wW-rXX"/>
+                                            <constraint firstItem="BMk-4o-WGe" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="XC5-aK-QIB"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e52-pd-xxE" secondAttribute="trailing" constant="20" id="XCz-ha-m1c"/>
+                                            <constraint firstItem="e52-pd-xxE" firstAttribute="top" secondItem="Gat-Uo-KJv" secondAttribute="bottom" constant="28" id="ZpF-lF-GY1"/>
+                                            <constraint firstAttribute="trailing" secondItem="tl9-6U-hC1" secondAttribute="trailing" constant="24" id="aNV-nR-HW2"/>
+                                            <constraint firstItem="tmu-2m-x4u" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="ahy-sR-MZm"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Xp-IS-tG8" secondAttribute="trailing" constant="24" id="bA4-oE-nrn"/>
+                                            <constraint firstAttribute="trailing" secondItem="CWr-vi-k36" secondAttribute="trailing" constant="23" id="bAJ-ui-i0W"/>
+                                            <constraint firstItem="SYy-cN-HJa" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="cfR-Qi-gwP"/>
+                                            <constraint firstAttribute="trailing" secondItem="6gh-Ui-dLe" secondAttribute="trailing" constant="24" id="dkH-n4-V20"/>
+                                            <constraint firstItem="7mH-XT-InF" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="gMT-eB-DgW"/>
+                                            <constraint firstItem="DVJ-31-WRR" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="h02-YC-6I6"/>
+                                            <constraint firstItem="1xl-im-d3A" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="hLc-Bc-wDm"/>
+                                            <constraint firstItem="XK9-JH-yWC" firstAttribute="top" secondItem="SYy-cN-HJa" secondAttribute="bottom" constant="10" id="hwE-xW-vjK"/>
+                                            <constraint firstItem="2lV-i3-9fh" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="23" id="iqR-8F-bid"/>
+                                            <constraint firstItem="zZU-9K-qie" firstAttribute="centerX" secondItem="daK-YJ-8zF" secondAttribute="centerX" id="k8A-yc-waU"/>
+                                            <constraint firstItem="e52-pd-xxE" firstAttribute="leading" secondItem="daK-YJ-8zF" secondAttribute="leading" constant="19" id="kbz-ZZ-dE3"/>
+                                            <constraint firstItem="uf5-oZ-INb" firstAttribute="centerX" secondItem="daK-YJ-8zF" secondAttribute="centerX" id="ma2-qU-JVS"/>
+                                            <constraint firstItem="6gh-Ui-dLe" firstAttribute="centerY" secondItem="1xl-im-d3A" secondAttribute="centerY" id="nBg-9Q-mtz"/>
+                                            <constraint firstItem="ddb-hx-cUL" firstAttribute="centerX" secondItem="daK-YJ-8zF" secondAttribute="centerX" id="oIB-1W-A06"/>
+                                            <constraint firstItem="3Xp-IS-tG8" firstAttribute="centerY" secondItem="Nmv-h9-L80" secondAttribute="centerY" id="oti-F6-Kx4"/>
+                                            <constraint firstItem="sBb-FS-mVO" firstAttribute="centerY" secondItem="apC-gV-nj5" secondAttribute="centerY" id="ozj-bT-nEc"/>
+                                            <constraint firstItem="2lV-i3-9fh" firstAttribute="top" secondItem="BMk-4o-WGe" secondAttribute="bottom" constant="10" id="pwH-aC-ouH"/>
+                                            <constraint firstItem="BMk-4o-WGe" firstAttribute="top" secondItem="6F6-6Y-4LV" secondAttribute="bottom" constant="30" id="r8D-VL-Gmj"/>
+                                            <constraint firstItem="Gat-Uo-KJv" firstAttribute="centerX" secondItem="daK-YJ-8zF" secondAttribute="centerX" id="v33-Rs-WgU"/>
+                                            <constraint firstItem="uf5-oZ-INb" firstAttribute="top" secondItem="e52-pd-xxE" secondAttribute="bottom" constant="10" id="yGD-ZW-BbP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="daK-YJ-8zF" firstAttribute="leading" secondItem="3Rw-78-bEb" secondAttribute="leading" id="13t-cQ-Gr0"/>
+                                    <constraint firstItem="daK-YJ-8zF" firstAttribute="height" secondItem="3Rw-78-bEb" secondAttribute="height" priority="250" id="2ZP-ib-VKp"/>
+                                    <constraint firstAttribute="trailing" secondItem="daK-YJ-8zF" secondAttribute="trailing" id="BFX-PY-Y6k"/>
+                                    <constraint firstItem="daK-YJ-8zF" firstAttribute="width" secondItem="3Rw-78-bEb" secondAttribute="width" id="NrE-BI-BHg"/>
+                                    <constraint firstItem="daK-YJ-8zF" firstAttribute="top" secondItem="3Rw-78-bEb" secondAttribute="top" id="Uiw-jN-w2Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="daK-YJ-8zF" secondAttribute="bottom" id="owB-3T-laJ"/>
+                                    <constraint firstItem="daK-YJ-8zF" firstAttribute="width" secondItem="3Rw-78-bEb" secondAttribute="width" id="xlu-uB-XIF"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="n9e-kA-Nwc"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Jjl-Te-UUf"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wqW-fo-vYH" firstAttribute="trailing" secondItem="3Rw-78-bEb" secondAttribute="trailing" id="5Qe-ky-qeh"/>
+                            <constraint firstItem="3Rw-78-bEb" firstAttribute="leading" secondItem="wqW-fo-vYH" secondAttribute="leading" id="7Hv-ao-4gn"/>
+                            <constraint firstItem="3Rw-78-bEb" firstAttribute="top" secondItem="wqW-fo-vYH" secondAttribute="top" id="Fha-HL-nX8"/>
+                            <constraint firstItem="3Rw-78-bEb" firstAttribute="height" secondItem="gmy-DL-Ro9" secondAttribute="height" multiplier="0.935" id="IQq-Ff-qnb"/>
+                            <constraint firstItem="wqW-fo-vYH" firstAttribute="bottom" secondItem="3Rw-78-bEb" secondAttribute="bottom" id="wDz-Wu-F5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wqW-fo-vYH"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IQq-Ff-qnb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="2C5-uj-0bK"/>
+                    <navigationItem key="navigationItem" id="GzU-SD-LaF"/>
+                    <size key="freeformSize" width="375" height="1900"/>
+                    <connections>
+                        <outlet property="conflictScore" destination="3Xp-IS-tG8" id="e5S-uh-Wy2"/>
+                        <outlet property="moodScore" destination="sBb-FS-mVO" id="BwJ-pM-3Wg"/>
+                        <outlet property="relapseScore" destination="6gh-Ui-dLe" id="KpC-oC-l1h"/>
+                        <outlet property="salienceScore" destination="CWr-vi-k36" id="Dh8-7G-4UA"/>
+                        <outlet property="toleranceScore" destination="QJG-t3-pJ4" id="ATU-Gq-9TR"/>
+                        <outlet property="totalScore" destination="ddb-hx-cUL" id="NCt-XY-q1M"/>
+                        <outlet property="withdrawalScore" destination="tl9-6U-hC1" id="DKA-v1-Ghd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypj-gG-wfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="457"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IGD Test Classes" width="550.33331298828125" height="404.33334350585938"/>
+    </resources>
+</document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1017601224843B6B001CB2E2 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1017601124843B6B001CB2E2 /* Dashboard.storyboard */; };
+		10176014248441FC001CB2E2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10176013248441FC001CB2E2 /* DashboardViewController.swift */; };
 		102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D5247FCA670059A5AA /* AppDelegate.swift */; };
 		102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D7247FCA670059A5AA /* SceneDelegate.swift */; };
 		102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D9247FCA670059A5AA /* IGDViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1017601124843B6B001CB2E2 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		10176013248441FC001CB2E2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		102F10D2247FCA670059A5AA /* Gaming Addiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming Addiction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		102F10D5247FCA670059A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		102F10D7247FCA670059A5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				102F10D9247FCA670059A5AA /* IGDViewController.swift */,
 				105A24F22481985600F47407 /* ResultsViewController.swift */,
+				10176013248441FC001CB2E2 /* DashboardViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 			children = (
 				102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */,
 				102F10DB247FCA670059A5AA /* Main.storyboard */,
+				1017601124843B6B001CB2E2 /* Dashboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105A24ED24810B3000F47407 /* LICENSE.txt in Resources */,
+				1017601224843B6B001CB2E2 /* Dashboard.storyboard in Resources */,
 				105A24EA24810B3000F47407 /* Roboto-BoldItalic.ttf in Resources */,
 				105A24E524810B3000F47407 /* Roboto-Medium.ttf in Resources */,
 				102F10E2247FCA6B0059A5AA /* LaunchScreen.storyboard in Resources */,
@@ -191,6 +198,7 @@
 			files = (
 				102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */,
 				102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */,
+				10176014248441FC001CB2E2 /* DashboardViewController.swift in Sources */,
 				102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */,
 				105A24F32481985700F47407 /* ResultsViewController.swift in Sources */,
 			);

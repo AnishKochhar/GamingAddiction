@@ -76,7 +76,7 @@ class ResultsViewController: UIViewController {
     
     func calculateResults() {
         // Quickly check that answers is not a blank array
-        guard answers != [] else { return }
+        guard answers != [] else { fatalError("Answers in an empty array") }
         print(answers)
         
         // Calculate the factor's values by averaging all of the factors
@@ -92,15 +92,5 @@ class ResultsViewController: UIViewController {
         
         relapse = Double(answers[5] + answers[11] + answers[17]) / 3.0
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
