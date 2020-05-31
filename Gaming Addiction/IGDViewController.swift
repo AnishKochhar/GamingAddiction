@@ -54,13 +54,32 @@ class IGDViewController: UIViewController {
     // This variable stores the current answer, so that it can be put into the answers array easily
     var currentAnswer = 0
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Check if the user has done the test before. If so, they should go straight to the dashboard
+        if UserDefaults.standard.bool(forKey: "TestDone") == true {
+            print("we in")
+            // The user should now be moved to their dashboard, which is in its own storyboard
+//            let dashboardStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//
+//            // Get the View Controller from the Dashboard.storyboard
+//            if let dashboardVC = dashboardStoryboard.instantiateViewController(identifier: "DashboardTabBar") as? UITabBarController {
+//                print("loading")
+//                // Change the root controller to the dashboard vc
+//                UIApplication.shared.windows[0].rootViewController = dashboardVC
+//            }
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "Results") as? ResultsViewController {
+                print("again, in")
+                // Push the vc onto the navigation stack via a show segue
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
+        }
+        
         // Set the navigation bar title
         navigationItem.title = "\(String(format:"%02d", questionNumber))"
-        
+
         // Designing the button aesthetics
         submitButton.backgroundColor = buttonColour
         submitButton.layer.cornerRadius = 10.0

@@ -12,7 +12,7 @@
 		102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D5247FCA670059A5AA /* AppDelegate.swift */; };
 		102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D7247FCA670059A5AA /* SceneDelegate.swift */; };
 		102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F10D9247FCA670059A5AA /* IGDViewController.swift */; };
-		102F10DD247FCA670059A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DB247FCA670059A5AA /* Main.storyboard */; };
+		102F10DD247FCA670059A5AA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DB247FCA670059A5AA /* Welcome.storyboard */; };
 		102F10DF247FCA6B0059A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102F10DE247FCA6B0059A5AA /* Assets.xcassets */; };
 		102F10E2247FCA6B0059A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */; };
 		105A24E524810B3000F47407 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24D824810B3000F47407 /* Roboto-Medium.ttf */; };
@@ -31,7 +31,7 @@
 		102F10D5247FCA670059A5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		102F10D7247FCA670059A5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		102F10D9247FCA670059A5AA /* IGDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDViewController.swift; sourceTree = "<group>"; };
-		102F10DC247FCA670059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		102F10DC247FCA670059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		102F10DE247FCA6B0059A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102F10E1247FCA6B0059A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		102F10E3247FCA6B0059A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */,
-				102F10DB247FCA670059A5AA /* Main.storyboard */,
+				102F10DB247FCA670059A5AA /* Welcome.storyboard */,
 				1017601124843B6B001CB2E2 /* Dashboard.storyboard */,
 			);
 			path = Storyboards;
@@ -185,7 +185,7 @@
 				105A24E924810B3000F47407 /* Roboto-ThinItalic.ttf in Resources */,
 				105A24F124810B3000F47407 /* Roboto-Black.ttf in Resources */,
 				102F10DF247FCA6B0059A5AA /* Assets.xcassets in Resources */,
-				102F10DD247FCA670059A5AA /* Main.storyboard in Resources */,
+				102F10DD247FCA670059A5AA /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +207,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		102F10DB247FCA670059A5AA /* Main.storyboard */ = {
+		102F10DB247FCA670059A5AA /* Welcome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				102F10DC247FCA670059A5AA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Welcome.storyboard;
 			sourceTree = "<group>";
 		};
 		102F10E0247FCA6B0059A5AA /* LaunchScreen.storyboard */ = {

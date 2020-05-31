@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RW4-mi-Q6H">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -21,20 +21,20 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Dashboard View Controller-->
+        <!--Dashboard-->
         <scene sceneID="3I5-MZ-T74">
             <objects>
-                <viewController id="2yV-G6-sPz" customClass="DashboardViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Dashboard" id="2yV-G6-sPz" customClass="DashboardViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jE-RB-7tj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hau-qN-207">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-qN-207">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Dashboard" id="haH-k9-tUf">
-                                        <barButtonItem key="rightBarButtonItem" title="Add session" id="wW7-Vv-OG4"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Add session" systemItem="add" id="wW7-Vv-OG4"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -42,7 +42,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SnK-IR-g40"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="aSZ-70-1KL"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="aSZ-70-1KL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q8-YG-bcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4Mx-Ze-P5K">
             <objects>
-                <tabBarController id="RW4-mi-Q6H" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardTabBar" id="RW4-mi-Q6H" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9b0-aS-Dxr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -66,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="-120" y="-609"/>
         </scene>
-        <!--Results View Controller-->
+        <!--Test Results-->
         <scene sceneID="Vrz-Na-6Zk">
             <objects>
                 <viewController storyboardIdentifier="Results" id="Wwx-lJ-luH" customClass="ResultsViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,8 +150,8 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" misplaced="YES" text="Tolerance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-qF-vh2">
-                                                <rect key="frame" x="19" y="773" width="96" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Tolerance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-qF-vh2">
+                                                <rect key="frame" x="19" y="773" width="86" height="23"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -348,7 +348,7 @@ There is also a graph below that shows how different categories of gamers scored
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="2C5-uj-0bK"/>
+                    <tabBarItem key="tabBarItem" title="Test Results" image="bar-chart" id="2C5-uj-0bK"/>
                     <navigationItem key="navigationItem" id="GzU-SD-LaF"/>
                     <size key="freeformSize" width="375" height="1900"/>
                     <connections>
@@ -368,5 +368,7 @@ There is also a graph below that shows how different categories of gamers scored
     </scenes>
     <resources>
         <image name="IGD Test Classes" width="550.33331298828125" height="404.33334350585938"/>
+        <image name="bar-chart" width="30" height="30"/>
+        <image name="dashboard" width="30" height="30"/>
     </resources>
 </document>

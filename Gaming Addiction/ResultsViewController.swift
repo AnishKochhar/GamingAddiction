@@ -29,10 +29,19 @@ class ResultsViewController: UIViewController {
     
     // The answers array will be passed through the segue, but currently is an empty array
     var answers = [Int]()
+    
+    // Remove the navigation bar before the view loads
+    override func viewWillAppear(_ animated: Bool) {
+           // Call the superclass viewWillAppear
+           super.viewWillAppear(animated)
+           
+           // Disable the nav bar, as the user should not be able to navigate back to the test.
+           navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        answers = [3, 4, 1, 2, 4, 2, 5, 1, 5, 3, 2, 1, 3, 4, 4, 5, 1, 3, 4, 2]
         // If the answers array was not passed correctly through the segue, then through a fatal error.
         if answers == [] {
             fatalError("The answers have not been passed to the results page")
@@ -52,16 +61,15 @@ class ResultsViewController: UIViewController {
         relapseScore.text = String(format: "%.2f", relapse)
         
         totalScore.text = "Your total score: \(String(answers.reduce(0, +)))"
+        
+        // Set up User Defaults
+        let defaults = UserDefaults.standard
+        // Store the answers, as well as a bool checking that the test is done, so they can't retake
+        defaults.set(answers, forKey: "TestAnswers")
+        defaults.set(true, forKey: "TestDone")
     }
         
-    override func viewWillAppear(_ animated: Bool) {
-        // Call the superclass viewWillAppear
-        super.viewWillAppear(animated)
-        
-        // Disable the nav bar, as the user should not be able to navigate back to the test.
-        navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
+   
     /* Just so anyone reading understands, each of the questions asked in the IGD-20 test fits in one of the
        following 6 dimensions, which are the 6 strands of the Griffiths' model of addiction.
      They are:
@@ -93,4 +101,14 @@ class ResultsViewController: UIViewController {
         relapse = Double(answers[5] + answers[11] + answers[17]) / 3.0
     }
 
+    @IBAction func done(_ sender: Any) {
+        // The user should now be moved to their dashboard, which is in its own storyboard
+        let dashboardStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        
+        // Get the View Controller from the Dashboard.storyboard
+        if let dashboardVC = dashboardStoryboard.instantiateViewController(identifier: "DashboardTabBar") as? UITabBarController {
+            // Change the root controller to the dashboard vc
+            UIApplication.shared.windows[0].rootViewController = dashboardVC
+        }
+    }
 }
