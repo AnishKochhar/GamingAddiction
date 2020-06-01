@@ -42,11 +42,45 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SnK-IR-g40"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="aSZ-70-1KL"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="Fch-xy-LCT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WqS-Yj-HOn">
+                            <connections>
+                                <segue destination="YyY-ef-K4C" kind="show" id="87c-3w-7Qv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q8-YG-bcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="121"/>
+            <point key="canvasLocation" x="342.02898550724638" y="120.53571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FxU-a4-14I">
+            <objects>
+                <viewController id="YyY-ef-K4C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gyz-0A-In5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h6-s3-trB">
+                                <rect key="frame" x="137.5" y="114" width="139" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5h6-s3-trB" firstAttribute="top" secondItem="iDb-Gi-tXh" secondAttribute="top" constant="26" id="1sq-ED-ODb"/>
+                            <constraint firstItem="5h6-s3-trB" firstAttribute="centerX" secondItem="iDb-Gi-tXh" secondAttribute="centerX" id="8ly-9L-oKo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iDb-Gi-tXh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iyw-gO-IOe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZY-Ja-7zl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="866"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Mx-Ze-P5K">
@@ -58,7 +92,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2yV-G6-sPz" kind="relationship" relationship="viewControllers" id="fXt-bu-zhq"/>
+                        <segue destination="VVQ-Tn-OVw" kind="relationship" relationship="viewControllers" id="fXt-bu-zhq"/>
                         <segue destination="Wwx-lJ-luH" kind="relationship" relationship="viewControllers" id="pZ3-nk-lfr"/>
                     </connections>
                 </tabBarController>
@@ -81,7 +115,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1841.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="The Griffiths' Model of Addiction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e52-pd-xxE">
-                                                <rect key="frame" x="19" y="82" width="289.5" height="24"/>
+                                                <rect key="frame" x="19" y="82" width="286" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -127,7 +161,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Mood Modification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apC-gV-nj5">
-                                                <rect key="frame" x="19" y="591" width="168.5" height="24"/>
+                                                <rect key="frame" x="19" y="591" width="166.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -175,7 +209,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Withdrawal Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMk-4o-WGe">
-                                                <rect key="frame" x="19" y="944" width="202.5" height="24"/>
+                                                <rect key="frame" x="19" y="944" width="197.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -223,7 +257,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Relapse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-im-d3A">
-                                                <rect key="frame" x="19" y="1289.5" width="72.5" height="24"/>
+                                                <rect key="frame" x="19" y="1289.5" width="70.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -247,13 +281,13 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gat-Uo-KJv">
-                                                <rect key="frame" x="154.5" y="30" width="66.5" height="24"/>
+                                                <rect key="frame" x="153.5" y="30" width="68.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your total score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-hx-cUL">
-                                                <rect key="frame" x="115" y="1449.5" width="145.5" height="24"/>
+                                                <rect key="frame" x="114.5" y="1449.5" width="146.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -363,7 +397,26 @@ There is also a graph below that shows how different categories of gamers scored
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypj-gG-wfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="349" y="457"/>
+            <point key="canvasLocation" x="1258.6956521739132" y="456.69642857142856"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="3b8-l7-pmf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VVQ-Tn-OVw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" id="aSZ-70-1KL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Isu-zJ-KNd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2yV-G6-sPz" kind="relationship" relationship="rootViewController" id="R8t-51-7Ez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L1-OV-qiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568.1159420289855" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>

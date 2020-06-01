@@ -41,7 +41,14 @@ class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        answers = [3, 4, 1, 2, 4, 2, 5, 1, 5, 3, 2, 1, 3, 4, 4, 5, 1, 3, 4, 2]
+        
+        // If the test has been done, get it out of UserDefaults
+        if UserDefaults.standard.bool(forKey: "TestDone") == true {
+            // Store it in answers
+            answers = UserDefaults.standard.array(forKey: "TestAnswers") as! [Int]
+        }
+        
+        // If not, this is the first time viisting this page, so the answers get passed through a segue
         // If the answers array was not passed correctly through the segue, then through a fatal error.
         if answers == [] {
             fatalError("The answers have not been passed to the results page")
