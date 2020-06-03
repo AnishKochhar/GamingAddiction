@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100E484524880AB900A9871F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E484424880AB900A9871F /* Session.swift */; };
+		100E484824880B3A00A9871F /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E484724880B3A00A9871F /* AddSessionViewController.swift */; };
 		1014644E2484EE110095880D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014644D2484EE110095880D /* WelcomeViewController.swift */; };
 		1017601224843B6B001CB2E2 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1017601124843B6B001CB2E2 /* Dashboard.storyboard */; };
 		10176014248441FC001CB2E2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10176013248441FC001CB2E2 /* DashboardViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100E484424880AB900A9871F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		100E484724880B3A00A9871F /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
 		1014644D2484EE110095880D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1017601124843B6B001CB2E2 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		10176013248441FC001CB2E2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100E484624880ACC00A9871F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				100E484424880AB900A9871F /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		102F10C9247FCA670059A5AA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 				102F10D5247FCA670059A5AA /* AppDelegate.swift */,
 				102F10D7247FCA670059A5AA /* SceneDelegate.swift */,
 				102F10DE247FCA6B0059A5AA /* Assets.xcassets */,
+				100E484624880ACC00A9871F /* Models */,
 				102F10EC24801C540059A5AA /* Storyboards */,
 				102F10EB24801C430059A5AA /* Controllers */,
 			);
@@ -94,6 +107,7 @@
 				102F10D9247FCA670059A5AA /* IGDViewController.swift */,
 				105A24F22481985600F47407 /* ResultsViewController.swift */,
 				10176013248441FC001CB2E2 /* DashboardViewController.swift */,
+				100E484724880B3A00A9871F /* AddSessionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -199,10 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100E484524880AB900A9871F /* Session.swift in Sources */,
 				102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */,
 				102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */,
 				10176014248441FC001CB2E2 /* DashboardViewController.swift in Sources */,
 				1014644E2484EE110095880D /* WelcomeViewController.swift in Sources */,
+				100E484824880B3A00A9871F /* AddSessionViewController.swift in Sources */,
 				102F10D8247FCA670059A5AA /* SceneDelegate.swift in Sources */,
 				105A24F32481985700F47407 /* ResultsViewController.swift in Sources */,
 			);

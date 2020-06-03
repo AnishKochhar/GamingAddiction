@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gMm-NT-ukS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -26,11 +26,11 @@
             <objects>
                 <viewController storyboardIdentifier="IGDViewController" id="BYZ-38-t0r" customClass="IGDViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDM-0h-CcR">
-                                <rect key="frame" x="48" y="518.5" width="37" height="37"/>
+                                <rect key="frame" x="48" y="378" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="OnA-ea-n3h"/>
                                     <constraint firstAttribute="height" constant="37" id="wRC-Bm-SFu"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfm-V1-o8K">
-                                <rect key="frame" x="48" y="580.5" width="37" height="37"/>
+                                <rect key="frame" x="48" y="440" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="0Hx-we-lAw"/>
                                     <constraint firstAttribute="width" constant="37" id="fel-Oc-wuT"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujg-ih-O5L">
-                                <rect key="frame" x="48" y="642.5" width="37" height="37"/>
+                                <rect key="frame" x="48" y="502" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="0Mu-CC-ov5"/>
                                     <constraint firstAttribute="height" constant="37" id="RkN-PP-Hk8"/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azN-rm-yrx">
-                                <rect key="frame" x="48" y="456.5" width="37" height="37"/>
+                                <rect key="frame" x="48" y="316" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="Cga-CO-GP9"/>
                                     <constraint firstAttribute="height" constant="37" id="Zml-SX-6lc"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="874-1h-IqC">
-                                <rect key="frame" x="48" y="704.5" width="37" height="37"/>
+                                <rect key="frame" x="48" y="564" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="SrW-bU-GXO"/>
                                     <constraint firstAttribute="height" constant="37" id="xUW-yE-YfC"/>
@@ -90,37 +90,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strongly Disagree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSf-nY-w6t">
-                                <rect key="frame" x="150" y="464.5" width="137" height="21"/>
+                                <rect key="frame" x="150" y="324" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disagree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUe-Xg-ty8">
-                                <rect key="frame" x="150" y="526.5" width="68" height="21"/>
+                                <rect key="frame" x="150" y="386" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neither agree nor disagree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMs-YQ-jPd">
-                                <rect key="frame" x="150" y="588.5" width="204" height="21"/>
+                                <rect key="frame" x="150" y="448" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-80-QtU">
-                                <rect key="frame" x="150" y="650.5" width="46" height="21"/>
+                                <rect key="frame" x="150" y="510" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strongly Agree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKs-fG-R4l">
-                                <rect key="frame" x="150" y="712.5" width="114" height="21"/>
+                                <rect key="frame" x="150" y="572" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-VH-nBU">
-                                <rect key="frame" x="20" y="811" width="374" height="36"/>
+                                <rect key="frame" x="20" y="616" width="335" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BFB-Wo-Hre"/>
                                 </constraints>
@@ -131,7 +131,7 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H05-e2-TcN">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="IGD-20 Test" id="PH8-8o-HRt">
@@ -140,7 +140,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 01" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVM-Yl-FQs">
-                                <rect key="frame" x="155" y="238" width="104" height="22.5"/>
+                                <rect key="frame" x="135.5" y="194" width="104" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,7 +204,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aye-zN-Q2Q">
-                                <rect key="frame" x="0.0" y="44" width="375" height="1822"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geb-oD-qfU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1953"/>
@@ -525,7 +525,7 @@ There is also a graph below that shows how different categories of gamers scored
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e84-cO-be3">
-                                <rect key="frame" x="0.0" y="88" width="375" height="1178"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="1256"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gon-Uv-SSp" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1128.5"/>
@@ -685,7 +685,7 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110137</strin
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gMm-NT-ukS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iSd-bc-rAh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
