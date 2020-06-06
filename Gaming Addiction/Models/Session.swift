@@ -8,17 +8,11 @@
 
 import Foundation
 
-enum deviceType {
-    case console
-    case mobile
-    case computer
-    case other
-}
 
-struct Session {
-    
+struct Session: Codable {
+    let date: Date
     let deviceUsed: String
-    let deviceType: deviceType
-    let timeSpentInHours: Int
+    let deviceType: String
+    let timeSpentInMinutes: Int
     
 }

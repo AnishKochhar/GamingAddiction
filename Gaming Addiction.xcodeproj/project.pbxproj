@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10036C8A248C18AE0075A136 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10036C89248C18AE0075A136 /* SessionDelegate.swift */; };
 		100E484524880AB900A9871F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E484424880AB900A9871F /* Session.swift */; };
 		100E484824880B3A00A9871F /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E484724880B3A00A9871F /* AddSessionViewController.swift */; };
 		1014644E2484EE110095880D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1014644D2484EE110095880D /* WelcomeViewController.swift */; };
@@ -25,9 +26,11 @@
 		105A24F024810B3000F47407 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24E324810B3000F47407 /* Roboto-Thin.ttf */; };
 		105A24F124810B3000F47407 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105A24E424810B3000F47407 /* Roboto-Black.ttf */; };
 		105A24F32481985700F47407 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A24F22481985600F47407 /* ResultsViewController.swift */; };
+		105BB758248C387200CA31F3 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105BB757248C387200CA31F3 /* SessionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10036C89248C18AE0075A136 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		100E484424880AB900A9871F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		100E484724880B3A00A9871F /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
 		1014644D2484EE110095880D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		105A24E324810B3000F47407 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		105A24E424810B3000F47407 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		105A24F22481985600F47407 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		105BB757248C387200CA31F3 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				100E484424880AB900A9871F /* Session.swift */,
+				10036C89248C18AE0075A136 /* SessionDelegate.swift */,
+				105BB757248C387200CA31F3 /* SessionTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,7 +221,9 @@
 			files = (
 				100E484524880AB900A9871F /* Session.swift in Sources */,
 				102F10DA247FCA670059A5AA /* IGDViewController.swift in Sources */,
+				105BB758248C387200CA31F3 /* SessionTableViewCell.swift in Sources */,
 				102F10D6247FCA670059A5AA /* AppDelegate.swift in Sources */,
+				10036C8A248C18AE0075A136 /* SessionDelegate.swift in Sources */,
 				10176014248441FC001CB2E2 /* DashboardViewController.swift in Sources */,
 				1014644E2484EE110095880D /* WelcomeViewController.swift in Sources */,
 				100E484824880B3A00A9871F /* AddSessionViewController.swift in Sources */,

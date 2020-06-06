@@ -88,7 +88,7 @@ class IGDViewController: UIViewController {
         if questionNumber == 20 {
             if IGDViewController.answers.contains(0) {
                 // At least one question has been left empty, and a user cannot continue until it has been filled in
-                let ac = UIAlertController(title: "Missing answers for at least one question ", message: "Please go back to question \(IGDViewController.answers.firstIndex(of: 0)! + 1) and enter your response.", preferredStyle: .alert)
+                let ac = UIAlertController(title: "Missing answers for a question ", message: "Please go back to question \(IGDViewController.answers.firstIndex(of: 0)! + 1) and enter your response.", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
                 present(ac, animated: true)
             }

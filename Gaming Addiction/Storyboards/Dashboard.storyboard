@@ -29,73 +29,256 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-qN-207">
+                            <navigationBar hidden="YES" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-qN-207">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Dashboard" id="haH-k9-tUf">
                                         <barButtonItem key="rightBarButtonItem" title="Add session" systemItem="add" id="wW7-Vv-OG4"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-AU-by5">
+                                <rect key="frame" x="0.0" y="145" width="414" height="456"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionCell" id="Xzu-G5-nmP" customClass="SessionTableViewCell" customModule="Gaming_Addiction" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xzu-G5-nmP" id="IuY-Vb-g1H">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNl-ex-6Fs">
+                                                    <rect key="frame" x="20" y="11" width="31" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04/06/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCx-Td-WYx">
+                                                    <rect key="frame" x="20" y="37" width="72" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-y6-kso">
+                                                    <rect key="frame" x="320" y="11" width="74" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeP-Y8-f4p">
+                                                    <rect key="frame" x="322" y="37" width="72" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1X-EG-848">
+                                                    <rect key="frame" x="185" y="11" width="44" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-Gx-0Vf">
+                                                    <rect key="frame" x="165.5" y="37" width="83" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bNl-ex-6Fs" firstAttribute="leading" secondItem="IuY-Vb-g1H" secondAttribute="leading" constant="20" id="9Iy-MO-8hF"/>
+                                                <constraint firstAttribute="bottom" secondItem="aZk-Gx-0Vf" secondAttribute="bottom" constant="13" id="E1J-jA-pWo"/>
+                                                <constraint firstAttribute="trailing" secondItem="UeP-Y8-f4p" secondAttribute="trailing" constant="20" id="Ecc-Az-ivo"/>
+                                                <constraint firstItem="f1X-EG-848" firstAttribute="top" secondItem="IuY-Vb-g1H" secondAttribute="top" constant="11" id="Fb2-bu-vcs"/>
+                                                <constraint firstItem="aZk-Gx-0Vf" firstAttribute="centerX" secondItem="IuY-Vb-g1H" secondAttribute="centerX" id="PPI-Vt-qgT"/>
+                                                <constraint firstAttribute="bottom" secondItem="UeP-Y8-f4p" secondAttribute="bottom" constant="13" id="QzW-s0-9Q6"/>
+                                                <constraint firstItem="CCx-Td-WYx" firstAttribute="leading" secondItem="IuY-Vb-g1H" secondAttribute="leading" constant="20" id="VJO-WN-MYO"/>
+                                                <constraint firstItem="f1X-EG-848" firstAttribute="centerX" secondItem="IuY-Vb-g1H" secondAttribute="centerX" id="aLm-nZ-FoI"/>
+                                                <constraint firstAttribute="bottom" secondItem="CCx-Td-WYx" secondAttribute="bottom" constant="13" id="cJS-JK-u7F"/>
+                                                <constraint firstItem="QMb-y6-kso" firstAttribute="top" secondItem="IuY-Vb-g1H" secondAttribute="top" constant="11" id="ebz-cj-XeR"/>
+                                                <constraint firstAttribute="trailing" secondItem="QMb-y6-kso" secondAttribute="trailing" constant="20" id="rr1-hu-syh"/>
+                                                <constraint firstItem="bNl-ex-6Fs" firstAttribute="top" secondItem="IuY-Vb-g1H" secondAttribute="top" constant="11" id="tdW-mC-A2p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="CCx-Td-WYx" id="fAW-3i-NQx"/>
+                                            <outlet property="deviceLabel" destination="aZk-Gx-0Vf" id="0zd-Eb-7KB"/>
+                                            <outlet property="timeSpentLabel" destination="UeP-Y8-f4p" id="9sQ-bj-8GZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Past Sessions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsk-2a-9EL">
+                                <rect key="frame" x="142" y="103" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Spent on Each Device Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob9-Oh-3Or">
+                                <rect key="frame" x="20" y="629" width="225.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzC-o9-zun">
+                                <rect key="frame" x="242.5" y="656.5" width="56.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqs-vE-nZJ">
+                                <rect key="frame" x="307" y="651" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VIP-H3-tMh"/>
+                                    <constraint firstAttribute="width" constant="87" id="yKp-o0-ZWq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bm-i5-bMF">
+                                <rect key="frame" x="229" y="690.5" width="70" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WK-Hi-jbd">
+                                <rect key="frame" x="307" y="685" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hp4-6G-58a"/>
+                                    <constraint firstAttribute="width" constant="87" id="pMK-42-O4u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-F6-IzQ">
+                                <rect key="frame" x="253" y="724.5" width="46" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4S-aB-OBq">
+                                <rect key="frame" x="307" y="719" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="1Fk-kM-RL0"/>
+                                    <constraint firstAttribute="height" constant="30" id="jL5-c5-jqj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDo-XX-jkD">
+                                <rect key="frame" x="307" y="753" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="dqD-DV-tIX"/>
+                                    <constraint firstAttribute="height" constant="30" id="iNH-Zj-jwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlQ-xA-qvy">
+                                <rect key="frame" x="261" y="758.5" width="38" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dqs-vE-nZJ" firstAttribute="leading" secondItem="qzC-o9-zun" secondAttribute="trailing" constant="8" id="1jW-8y-tQT"/>
+                            <constraint firstItem="zsk-2a-9EL" firstAttribute="centerX" secondItem="SnK-IR-g40" secondAttribute="centerX" id="59W-Pc-pMD"/>
+                            <constraint firstItem="1WK-Hi-jbd" firstAttribute="leading" secondItem="7Bm-i5-bMF" secondAttribute="trailing" constant="8" id="7Ao-2h-3jA"/>
+                            <constraint firstItem="b4S-aB-OBq" firstAttribute="top" secondItem="1WK-Hi-jbd" secondAttribute="bottom" constant="4" id="8n1-jP-d3n"/>
+                            <constraint firstItem="TbK-AU-by5" firstAttribute="top" secondItem="zsk-2a-9EL" secondAttribute="bottom" constant="21" id="Cl7-F7-eja"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="trailing" secondItem="TbK-AU-by5" secondAttribute="trailing" id="F9Z-vr-x3o"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="bottom" secondItem="XDo-XX-jkD" secondAttribute="bottom" constant="30" id="Gq7-rN-TRn"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="trailing" secondItem="1WK-Hi-jbd" secondAttribute="trailing" constant="20" id="HGy-qC-1nb"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="trailing" secondItem="XDo-XX-jkD" secondAttribute="trailing" constant="20" id="Hde-o8-eFg"/>
+                            <constraint firstItem="hau-qN-207" firstAttribute="bottom" secondItem="SnK-IR-g40" secondAttribute="top" id="IoW-qG-Isl"/>
+                            <constraint firstItem="Dqs-vE-nZJ" firstAttribute="top" secondItem="ob9-Oh-3Or" secondAttribute="bottom" constant="3" id="Oea-vs-19u"/>
+                            <constraint firstItem="ob9-Oh-3Or" firstAttribute="leading" secondItem="SnK-IR-g40" secondAttribute="leading" constant="20" id="Zef-zG-Fkh"/>
+                            <constraint firstItem="nlQ-xA-qvy" firstAttribute="centerY" secondItem="XDo-XX-jkD" secondAttribute="centerY" id="b9q-PC-S7l"/>
+                            <constraint firstItem="hau-qN-207" firstAttribute="trailing" secondItem="TbK-AU-by5" secondAttribute="trailing" id="brb-Sp-efo"/>
+                            <constraint firstItem="ob9-Oh-3Or" firstAttribute="top" secondItem="TbK-AU-by5" secondAttribute="bottom" constant="28" id="dfN-Mg-ktM"/>
+                            <constraint firstItem="zsk-2a-9EL" firstAttribute="top" secondItem="hau-qN-207" secondAttribute="bottom" constant="15" id="eea-2e-8bU"/>
+                            <constraint firstItem="TbK-AU-by5" firstAttribute="leading" secondItem="SnK-IR-g40" secondAttribute="leading" id="j9E-Ee-Jgg"/>
+                            <constraint firstItem="XDo-XX-jkD" firstAttribute="top" secondItem="b4S-aB-OBq" secondAttribute="bottom" constant="4" id="jFX-yG-QHK"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="trailing" secondItem="b4S-aB-OBq" secondAttribute="trailing" constant="20" id="mUl-Jg-ohV"/>
+                            <constraint firstItem="SnK-IR-g40" firstAttribute="trailing" secondItem="Dqs-vE-nZJ" secondAttribute="trailing" constant="20" id="rzQ-v7-i27"/>
+                            <constraint firstItem="1WK-Hi-jbd" firstAttribute="top" secondItem="Dqs-vE-nZJ" secondAttribute="bottom" constant="4" id="vW7-L3-1d3"/>
+                            <constraint firstItem="b4S-aB-OBq" firstAttribute="leading" secondItem="hR4-F6-IzQ" secondAttribute="trailing" constant="8" id="vnr-ba-V6S"/>
+                            <constraint firstItem="qzC-o9-zun" firstAttribute="centerY" secondItem="Dqs-vE-nZJ" secondAttribute="centerY" id="wMG-Ur-puC"/>
+                            <constraint firstItem="7Bm-i5-bMF" firstAttribute="centerY" secondItem="1WK-Hi-jbd" secondAttribute="centerY" id="xjt-oh-JVC"/>
+                            <constraint firstItem="hau-qN-207" firstAttribute="leading" secondItem="TbK-AU-by5" secondAttribute="leading" id="xp4-Kz-lPd"/>
+                            <constraint firstItem="XDo-XX-jkD" firstAttribute="leading" secondItem="nlQ-xA-qvy" secondAttribute="trailing" constant="8" id="zUN-8x-dNB"/>
+                            <constraint firstItem="hR4-F6-IzQ" firstAttribute="centerY" secondItem="b4S-aB-OBq" secondAttribute="centerY" id="zZh-hp-UUG"/>
+                            <constraint firstItem="TbK-AU-by5" firstAttribute="centerX" secondItem="SnK-IR-g40" secondAttribute="centerX" id="zo0-Im-GVV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SnK-IR-g40"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="Fch-xy-LCT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="WqS-Yj-HOn">
                             <connections>
-                                <segue destination="YyY-ef-K4C" kind="show" id="87c-3w-7Qv"/>
+                                <action selector="addSession:" destination="2yV-G6-sPz" id="Vrn-WQ-QWJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="computerHours" destination="1WK-Hi-jbd" id="bln-56-I2d"/>
+                        <outlet property="consoleHours" destination="Dqs-vE-nZJ" id="3pf-0o-UtP"/>
+                        <outlet property="mobileHours" destination="b4S-aB-OBq" id="AZg-v2-Fof"/>
+                        <outlet property="otherHours" destination="XDo-XX-jkD" id="bdd-ri-ow1"/>
+                        <outlet property="tableView" destination="TbK-AU-by5" id="k1k-91-8Pf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q8-YG-bcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342.02898550724638" y="120.53571428571428"/>
+            <point key="canvasLocation" x="340.57971014492756" y="120.53571428571428"/>
         </scene>
         <!--Add Session View Controller-->
         <scene sceneID="FxU-a4-14I">
             <objects>
-                <viewController id="YyY-ef-K4C" customClass="AddSessionViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddSession" id="YyY-ef-K4C" customClass="AddSessionViewController" customModule="Gaming_Addiction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyz-0A-In5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Add a session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h6-s3-trB">
-                                <rect key="frame" x="137.5" y="108" width="139" height="26"/>
+                                <rect key="frame" x="137.5" y="64" width="139" height="26"/>
                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8C9-8u-9Ra">
-                                <rect key="frame" x="26" y="158" width="362" height="191"/>
+                                <rect key="frame" x="26" y="114" width="362" height="155"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="rKx-b8-Jl9"/>
+                                    <constraint firstAttribute="height" constant="155" id="Dej-s5-Jhb"/>
                                 </constraints>
                                 <string key="text">Here you can add a gaming session so that you can keep track of how much time you have spent playing. 
 Type in the name of the device that you played on, what category of device it fits into, as well as how long you spent playing.
 
 It will then be added to your dashboard.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Device Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM8-fP-vtS">
-                                <rect key="frame" x="26" y="483" width="105" height="23"/>
+                                <rect key="frame" x="26" y="403" width="105" height="23"/>
                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Time spent playing (in hours)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-TE-81V">
-                                <rect key="frame" x="26" y="606" width="252" height="23"/>
+                                <rect key="frame" x="26" y="526" width="252" height="23"/>
                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faK-Xd-C7R">
-                                <rect key="frame" x="26" y="366" width="58" height="17"/>
+                                <rect key="frame" x="26" y="286" width="58" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="FW3-J6-FoV"/>
                                 </constraints>
@@ -104,7 +287,7 @@ It will then be added to your dashboard.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose device" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-ki-tDd">
-                                <rect key="frame" x="188" y="414" width="200" height="34"/>
+                                <rect key="frame" x="188" y="334" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="hGG-4f-SbO"/>
                                 </constraints>
@@ -112,7 +295,7 @@ It will then be added to your dashboard.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose device type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRw-cv-peu">
-                                <rect key="frame" x="188" y="537" width="200" height="34"/>
+                                <rect key="frame" x="188" y="457" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="rVp-eV-w5b"/>
                                 </constraints>
@@ -120,29 +303,51 @@ It will then be added to your dashboard.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time spent playing" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTC-jZ-ga6">
-                                <rect key="frame" x="188" y="660" width="200" height="34"/>
+                                <rect key="frame" x="188" y="580" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="WSY-ef-Zg8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-m3-kf2">
+                                <rect key="frame" x="40" y="811" width="334" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="lhR-4C-xle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add Session">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addSession:" destination="YyY-ef-K4C" eventType="touchUpInside" id="Usc-Lp-JnF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5h6-s3-trB" firstAttribute="centerX" secondItem="iDb-Gi-tXh" secondAttribute="centerX" id="8ly-9L-oKo"/>
+                            <constraint firstItem="lMq-m3-kf2" firstAttribute="leading" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="40" id="Cis-A2-Sop"/>
                             <constraint firstItem="ME4-TE-81V" firstAttribute="leading" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="26" id="Iek-LA-gvj"/>
                             <constraint firstItem="dM8-fP-vtS" firstAttribute="leading" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="26" id="JSl-bE-xZj"/>
                             <constraint firstItem="ME4-TE-81V" firstAttribute="top" secondItem="dM8-fP-vtS" secondAttribute="bottom" constant="100" id="K2s-Ck-wVP"/>
                             <constraint firstItem="8C9-8u-9Ra" firstAttribute="top" secondItem="5h6-s3-trB" secondAttribute="bottom" constant="24" id="PFx-eV-mQb"/>
                             <constraint firstItem="bRw-cv-peu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="30" id="S37-93-icq"/>
+                            <constraint firstItem="lMq-m3-kf2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ME4-TE-81V" secondAttribute="bottom" constant="30" id="TcJ-Ek-2Y5"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="hTC-jZ-ga6" secondAttribute="trailing" constant="26" id="Us8-Lz-EZN"/>
+                            <constraint firstItem="lMq-m3-kf2" firstAttribute="centerX" secondItem="iDb-Gi-tXh" secondAttribute="centerX" id="WiP-Dq-pvF"/>
                             <constraint firstItem="hTC-jZ-ga6" firstAttribute="top" secondItem="ME4-TE-81V" secondAttribute="bottom" constant="31" id="XU2-Su-3jC"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="bRw-cv-peu" secondAttribute="trailing" constant="26" id="fjd-9c-YtR"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="8C9-8u-9Ra" secondAttribute="trailing" constant="26" id="gxi-CA-F1t"/>
                             <constraint firstItem="bRw-cv-peu" firstAttribute="top" secondItem="dM8-fP-vtS" secondAttribute="bottom" constant="31" id="hD7-pt-8jd"/>
+                            <constraint firstItem="iDb-Gi-tXh" firstAttribute="bottom" secondItem="lMq-m3-kf2" secondAttribute="bottom" constant="15" id="hg8-7M-znK"/>
                             <constraint firstItem="hTC-jZ-ga6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="30" id="is1-y0-xO4"/>
-                            <constraint firstItem="iDb-Gi-tXh" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ME4-TE-81V" secondAttribute="bottom" constant="30" id="jCK-U4-Pu4"/>
                             <constraint firstItem="5h6-s3-trB" firstAttribute="top" secondItem="iDb-Gi-tXh" secondAttribute="top" constant="20" id="jzg-gB-mrj"/>
                             <constraint firstItem="faK-Xd-C7R" firstAttribute="top" secondItem="8C9-8u-9Ra" secondAttribute="bottom" constant="17" id="llg-0F-5qP"/>
                             <constraint firstItem="faK-Xd-C7R" firstAttribute="leading" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="26" id="nYR-b0-BJM"/>
@@ -156,6 +361,7 @@ It will then be added to your dashboard.</string>
                     </view>
                     <navigationItem key="navigationItem" id="iyw-gO-IOe"/>
                     <connections>
+                        <outlet property="addSession" destination="lMq-m3-kf2" id="Fbm-NN-L3w"/>
                         <outlet property="deviceTextField" destination="cvr-ki-tDd" id="rII-pD-4SQ"/>
                         <outlet property="deviceTypeTextField" destination="bRw-cv-peu" id="3Wx-Ir-OFc"/>
                         <outlet property="timeTextField" destination="hTC-jZ-ga6" id="GPp-fD-uyi"/>
