@@ -74,10 +74,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="191" id="rKx-b8-Jl9"/>
                                 </constraints>
-                                <mutableString key="text">Here you can add a gaming session so that you can keep track of how much time you have spent playing. 
+                                <string key="text">Here you can add a gaming session so that you can keep track of how much time you have spent playing. 
 Type in the name of the device that you played on, what category of device it fits into, as well as how long you spent playing.
 
-It will then be added to your dashboard.</mutableString>
+It will then be added to your dashboard.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -119,6 +119,14 @@ It will then be added to your dashboard.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time spent playing" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTC-jZ-ga6">
+                                <rect key="frame" x="188" y="660" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WSY-ef-Zg8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -128,9 +136,12 @@ It will then be added to your dashboard.</mutableString>
                             <constraint firstItem="ME4-TE-81V" firstAttribute="top" secondItem="dM8-fP-vtS" secondAttribute="bottom" constant="100" id="K2s-Ck-wVP"/>
                             <constraint firstItem="8C9-8u-9Ra" firstAttribute="top" secondItem="5h6-s3-trB" secondAttribute="bottom" constant="24" id="PFx-eV-mQb"/>
                             <constraint firstItem="bRw-cv-peu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="30" id="S37-93-icq"/>
+                            <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="hTC-jZ-ga6" secondAttribute="trailing" constant="26" id="Us8-Lz-EZN"/>
+                            <constraint firstItem="hTC-jZ-ga6" firstAttribute="top" secondItem="ME4-TE-81V" secondAttribute="bottom" constant="31" id="XU2-Su-3jC"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="bRw-cv-peu" secondAttribute="trailing" constant="26" id="fjd-9c-YtR"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="trailing" secondItem="8C9-8u-9Ra" secondAttribute="trailing" constant="26" id="gxi-CA-F1t"/>
                             <constraint firstItem="bRw-cv-peu" firstAttribute="top" secondItem="dM8-fP-vtS" secondAttribute="bottom" constant="31" id="hD7-pt-8jd"/>
+                            <constraint firstItem="hTC-jZ-ga6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iDb-Gi-tXh" secondAttribute="leading" constant="30" id="is1-y0-xO4"/>
                             <constraint firstItem="iDb-Gi-tXh" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ME4-TE-81V" secondAttribute="bottom" constant="30" id="jCK-U4-Pu4"/>
                             <constraint firstItem="5h6-s3-trB" firstAttribute="top" secondItem="iDb-Gi-tXh" secondAttribute="top" constant="20" id="jzg-gB-mrj"/>
                             <constraint firstItem="faK-Xd-C7R" firstAttribute="top" secondItem="8C9-8u-9Ra" secondAttribute="bottom" constant="17" id="llg-0F-5qP"/>
@@ -147,6 +158,7 @@ It will then be added to your dashboard.</mutableString>
                     <connections>
                         <outlet property="deviceTextField" destination="cvr-ki-tDd" id="rII-pD-4SQ"/>
                         <outlet property="deviceTypeTextField" destination="bRw-cv-peu" id="3Wx-Ir-OFc"/>
+                        <outlet property="timeTextField" destination="hTC-jZ-ga6" id="GPp-fD-uyi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZY-Ja-7zl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -186,7 +198,7 @@ It will then be added to your dashboard.</mutableString>
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1841.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="The Griffiths' Model of Addiction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e52-pd-xxE">
-                                                <rect key="frame" x="19" y="82" width="286" height="24"/>
+                                                <rect key="frame" x="19" y="82" width="289.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -232,7 +244,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Mood Modification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apC-gV-nj5">
-                                                <rect key="frame" x="19" y="591" width="166.5" height="24"/>
+                                                <rect key="frame" x="19" y="591" width="168.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -280,7 +292,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Withdrawal Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMk-4o-WGe">
-                                                <rect key="frame" x="19" y="944" width="197.5" height="24"/>
+                                                <rect key="frame" x="19" y="944" width="202.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -328,7 +340,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Relapse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-im-d3A">
-                                                <rect key="frame" x="19" y="1289.5" width="70.5" height="24"/>
+                                                <rect key="frame" x="19" y="1289.5" width="72.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -352,7 +364,7 @@ There is also a graph below that shows how different categories of gamers scored
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gat-Uo-KJv">
-                                                <rect key="frame" x="153.5" y="30" width="68.5" height="24"/>
+                                                <rect key="frame" x="154.5" y="30" width="66.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
