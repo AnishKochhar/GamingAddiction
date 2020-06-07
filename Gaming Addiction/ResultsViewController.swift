@@ -94,8 +94,7 @@ class ResultsViewController: UIViewController {
     func calculateResults() {
         // Quickly check that answers is not a blank array
         guard answers != [] else { fatalError("Answers in an empty array") }
-        print(answers)
-        
+
         // Calculate the factor's values by averaging all of the factors
         salience = Double(answers[0] + answers[6] + answers[12]) / 3.0
 

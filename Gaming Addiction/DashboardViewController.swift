@@ -32,13 +32,14 @@ class DashboardViewController: UIViewController, SessionDelegate {
         
         // Load sessions from UserDefaults
         if let data = UserDefaults.standard.value(forKey: "SessionsArray") as? Data {
+            // do, try, catch block to catch errors
             do {
+                // Decode the data as a session object (it conforms to Codable)
                 DashboardViewController.sessions = try PropertyListDecoder().decode(Array<Session>.self, from: data) 
             }
             catch  { fatalError("Couldn't load sessions from defaults") }
         }
-        print(DashboardViewController.sessions)
-        
+        // The format of dates in the table view
         dateFormatter.dateFormat = "dd/MM/yy"
         
         tableView.delegate = self
@@ -49,6 +50,7 @@ class DashboardViewController: UIViewController, SessionDelegate {
     
     // MARK: SessionDelegate Protocol Methods
     func sessionMade(session: Session) {
+        // Add the new session to the list
         DashboardViewController.sessions.append(session)
         
         // Save to UserDefaults
@@ -92,12 +94,13 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create the custom cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "SessionCell") as! SessionTableViewCell
         // Customise the cell
         let date = DashboardViewController.sessions[indexPath.row].date
         let device = DashboardViewController.sessions[indexPath.row].deviceUsed
         let timeSpent = DashboardViewController.sessions[indexPath.row].timeSpentInMinutes
-        
+        // Call a function on the SessionTableViewCell.swift file to change the labels values
         cell.setLabels(date: dateFormatter.string(from: date), device: device, timeSpent: String(timeSpent))
         
         return cell

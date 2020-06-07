@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Custom Table View Cell
 class SessionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateLabel: UILabel!

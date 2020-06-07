@@ -55,6 +55,7 @@ class AddSessionViewController: UIViewController {
     }
     
     func addLabelsToTimePicker() {
+        // This simply creates the Hour and Minute labels above the picker wheels in the time picker view.
         let labelWidth = self.view.frame.width / 2.0
         let hourLabel = UILabel(frame: CGRect(x: timePicker.frame.origin.x, y: 20, width: labelWidth, height: 30))
         hourLabel.text = "Hours"
@@ -96,7 +97,7 @@ class AddSessionViewController: UIViewController {
         
         deviceTextField.inputAccessoryView = toolbar
         deviceTypeTextField.inputAccessoryView = toolbar
-        
+        // Creates a seperate toolbar for the time picker, as they have different closures called when dismissed.
         let timeToolbar = UIToolbar()
         timeToolbar.sizeToFit()
         
@@ -104,7 +105,6 @@ class AddSessionViewController: UIViewController {
         
         timeToolbar.setItems([timeDoneButton], animated: false)
         timeToolbar.isUserInteractionEnabled = true
-        
         
         timeTextField.inputAccessoryView = timeToolbar
     }
@@ -124,10 +124,13 @@ class AddSessionViewController: UIViewController {
     }
     
     @objc func dismissTimeKeyboard() {
+        // Get the hour and minute value
         let hour = timePicker.selectedRow(inComponent: 0)
         let minute = minutes[timePicker.selectedRow(inComponent: 1)]
+        // Caluclate time in mins
         timeSpentMinutes = hour*60 + Int(minute)!
         if hour == 11 {
+            // If they put 11+ hours (a LONG time) change the text a little bit.
             timeTextField.text = "\(timeSpentMinutes) minutes+"
         } else {
             timeTextField.text = "\(timeSpentMinutes) minutes"
