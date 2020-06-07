@@ -12,10 +12,6 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UserDefaults.standard.removeObject(forKey: "TestDone")
-        UserDefaults.standard.removeObject(forKey: "TestAnswers")
-        UserDefaults.standard.removeObject(forKey: "SessionsArray")
 
         // Check if the user has done the test before. If so, they should go straight to the dashboard
         if UserDefaults.standard.bool(forKey: "TestDone") == true {

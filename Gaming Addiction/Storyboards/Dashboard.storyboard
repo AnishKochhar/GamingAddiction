@@ -271,8 +271,8 @@ It will then be added to your dashboard.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Time spent playing (in hours)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-TE-81V">
-                                <rect key="frame" x="26" y="526" width="252" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Time spent playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-TE-81V">
+                                <rect key="frame" x="26" y="526" width="164" height="23"/>
                                 <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

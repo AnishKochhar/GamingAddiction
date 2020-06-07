@@ -53,6 +53,14 @@ class ResultsViewController: UIViewController {
         if answers == [] {
             fatalError("The answers have not been passed to the results page")
         }
+        
+        // Set up User Defaults
+        let defaults = UserDefaults.standard
+        // Store the answers, as well as a bool checking that the test is done, so they can't retake
+        defaults.set(answers, forKey: "TestAnswers")
+        defaults.set(true, forKey: "TestDone")
+        
+        
         // Flips the result for the 2nd and 19th question, as they are meant to be score reveresly
         answers[1] = 6 - answers[1]
         answers[18] = 6 - answers[18]
@@ -68,12 +76,6 @@ class ResultsViewController: UIViewController {
         relapseScore.text = String(format: "%.2f", relapse)
         
         totalScore.text = "Your total score: \(String(answers.reduce(0, +)))"
-        
-        // Set up User Defaults
-        let defaults = UserDefaults.standard
-        // Store the answers, as well as a bool checking that the test is done, so they can't retake
-        defaults.set(answers, forKey: "TestAnswers")
-        defaults.set(true, forKey: "TestDone")
     }
         
    

@@ -113,10 +113,12 @@ class AddSessionViewController: UIViewController {
     @objc func dismissKeyboard() {
         // The user has changed the picker view, then change the UI
         if selectedDevice != "" {
-            deviceTextField.text = devices[devicePicker.selectedRow(inComponent: 0)]
+            selectedDevice = devices[devicePicker.selectedRow(inComponent: 0)]
+            deviceTextField.text = selectedDevice
         }
         if selectedDeviceType != "" {
-            deviceTypeTextField.text = deviceTypes[deviceTypePicker.selectedRow(inComponent: 0)]
+            selectedDeviceType = deviceTypes[deviceTypePicker.selectedRow(inComponent: 0)]
+            deviceTypeTextField.text = selectedDeviceType
         }
         view.endEditing(true)
     }
